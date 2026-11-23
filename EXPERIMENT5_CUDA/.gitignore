@@ -1,0 +1,15 @@
+# Compiled files
+*.exe
+*.obj
+*.o
+*.lib
+*.exp
+
+# CUDA build files
+*.cubin
+*.ptx
+*.fatbin
+
+# IDE files
+.vs/
+.vscode/
