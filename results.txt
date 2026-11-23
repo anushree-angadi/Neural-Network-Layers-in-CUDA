@@ -1,0 +1,38 @@
+EXPERIMENT 5: NEURAL NETWORK LAYERS IN CUDA
+============================================
+
+GPU: NVIDIA GeForce RTX 5060 Ti
+CUDA Version: 13.4
+
+FORWARD PASS DIMENSIONS
+----------------------
+Input:        256 x 128
+Hidden Layer: 256 x 64
+Output:       256 x 10
+
+KERNEL TEST RESULTS
+------------------
+Matrix Multiplication + Bias: PASSED
+ReLU: PASSED
+Sigmoid: PASSED
+
+PERFORMANCE RESULTS
+-----------------
+Average CPU Compute Time:       0.934245 ms
+Average GPU Kernel-only Time:    0.030794 ms
+Average GPU End-to-End Time:     0.134035 ms
+
+Kernel-only Speedup:             30.39392x
+End-to-End Speedup:              6.970157x
+
+VALIDATION
+----------
+Maximum Absolute Output Difference: 0.000000
+CPU and GPU Outputs: MATCH (within tolerance)
+
+CONCLUSION
+----------
+CUDA neural network kernels executed successfully.
+All individual kernel tests passed.
+GPU execution was faster than CPU execution.
+CPU and GPU outputs matched within tolerance.
