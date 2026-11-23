@@ -1,0 +1,26 @@
+# Executable files
+*.exe
+
+# Object and compiled files
+*.obj
+*.o
+*.lib
+*.exp
+
+# CUDA compiled files
+*.cubin
+*.ptx
+*.fatbin
+
+# Visual Studio files
+.vs/
+.vscode/
+
+# Temporary files
+*.tmp
+*.log
+
+# Build folders
+build/
+Debug/
+Release/
